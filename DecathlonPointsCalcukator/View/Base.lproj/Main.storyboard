@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OKg-K6-JgW">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DecathlonPointsCalcukator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="a2y-43-XMw">
+                                <rect key="frame" x="0.0" y="88" width="390" height="722"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Combined events points calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbI-fW-g22">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="240.66666666666666"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSj-8u-QRe">
+                                        <rect key="frame" x="0.0" y="240.66666666666669" width="390" height="240.66666666666669"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="utX-qy-T5a">
+                                                <rect key="frame" x="102.33333333333333" y="51" width="185.66666666666669" height="139"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Men's combined events:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vzt-RZ-9eM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="185.66666666666666" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdT-c3-xxG">
+                                                        <rect key="frame" x="0.0" y="54" width="185.66666666666666" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Decathlon"/>
+                                                        <connections>
+                                                            <segue destination="LUh-1o-zpO" kind="show" id="9E5-2O-gAv"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CS4-kU-iHU">
+                                                        <rect key="frame" x="0.0" y="108" width="185.66666666666666" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Heptathlon (indoor)"/>
+                                                        <connections>
+                                                            <segue destination="qbA-oZ-79h" kind="show" id="cGI-ny-mtI"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="utX-qy-T5a" firstAttribute="centerX" secondItem="dSj-8u-QRe" secondAttribute="centerX" id="3SU-Jd-AZN"/>
+                                            <constraint firstItem="utX-qy-T5a" firstAttribute="centerY" secondItem="dSj-8u-QRe" secondAttribute="centerY" id="LEG-tK-Y5V"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KSb-hR-MDz">
+                                        <rect key="frame" x="0.0" y="481.33333333333343" width="390" height="240.66666666666669"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="nWA-Ug-ofY">
+                                                <rect key="frame" x="90.000000000000014" y="55" width="210.33333333333337" height="131"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Women's combined events:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5c-wH-BpF">
+                                                        <rect key="frame" x="0.0" y="0.0" width="210.33333333333334" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ven-OS-YWs">
+                                                        <rect key="frame" x="0.0" y="50" width="210.33333333333334" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Heptathlon"/>
+                                                        <connections>
+                                                            <segue destination="l1i-Ha-Jf4" kind="show" id="xde-qR-4cv"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIZ-cQ-83Z">
+                                                        <rect key="frame" x="0.0" y="100" width="210.33333333333334" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Pentathlon (indoor)"/>
+                                                        <connections>
+                                                            <segue destination="btQ-xi-0FH" kind="show" id="Zkd-85-wrB"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="nWA-Ug-ofY" firstAttribute="centerX" secondItem="KSb-hR-MDz" secondAttribute="centerX" id="gDp-UR-2nx"/>
+                                            <constraint firstItem="nWA-Ug-ofY" firstAttribute="centerY" secondItem="KSb-hR-MDz" secondAttribute="centerY" id="hof-js-HYk"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="a2y-43-XMw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CaQ-1p-zIL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="a2y-43-XMw" secondAttribute="bottom" id="IhC-uW-PQ6"/>
+                            <constraint firstItem="a2y-43-XMw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="L2H-jD-czW"/>
+                            <constraint firstItem="a2y-43-XMw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="f4g-mX-227"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sPb-XU-YdN"/>
+                    <connections>
+                        <outlet property="DecathlonButton" destination="JdT-c3-xxG" id="KMG-Ox-erz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653.84615384615381" y="105.92417061611374"/>
+        </scene>
+        <!--Decathlon View Controller-->
+        <scene sceneID="Qui-SV-uUL">
+            <objects>
+                <viewController id="LUh-1o-zpO" customClass="DecathlonViewController" customModule="DecathlonPointsCalcukator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MMS-Rc-ZoC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="SuD-Uv-x4c"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Bgx-Du-yzK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Qc-yX-vcZ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1563.0769230769231" y="105.92417061611374"/>
+        </scene>
+        <!--HeptathlonM View Controller-->
+        <scene sceneID="m8a-cA-f9p">
+            <objects>
+                <viewController id="qbA-oZ-79h" customClass="HeptathlonMViewController" customModule="DecathlonPointsCalcukator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rLY-e0-Hef">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="1LC-u2-QkL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sac-pQ-Era"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Dt-SD-XOd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="634" y="776"/>
+        </scene>
+        <!--HeptathlonW View Controller-->
+        <scene sceneID="mai-dI-KUI">
+            <objects>
+                <viewController id="l1i-Ha-Jf4" customClass="HeptathlonWViewController" customModule="DecathlonPointsCalcukator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vKI-Ve-z4d">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Xp2-oh-shb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eil-iI-OoC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CED-lU-tv3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-274" y="929"/>
+        </scene>
+        <!--Pentathlon View Controller-->
+        <scene sceneID="c0S-wG-ZBR">
+            <objects>
+                <viewController id="btQ-xi-0FH" customClass="PentathlonViewController" customModule="DecathlonPointsCalcukator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lrn-H0-OfY">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Pf3-7T-Lbb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="H8R-vL-kAF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q1g-17-Sjk" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1195" y="928"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4hR-Tz-66y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OKg-K6-JgW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KsU-W5-tVg">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bQK-I1-ip6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="00v-pq-FQ3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-275.38461538461536" y="105.92417061611374"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

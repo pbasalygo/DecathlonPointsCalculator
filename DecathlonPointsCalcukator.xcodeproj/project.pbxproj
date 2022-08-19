@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		E546E0472875E59A007ABF34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546E0462875E59A007ABF34 /* AppDelegate.swift */; };
 		E546E0492875E59A007ABF34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546E0482875E59A007ABF34 /* SceneDelegate.swift */; };
-		E546E04B2875E59A007ABF34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546E04A2875E59A007ABF34 /* ViewController.swift */; };
 		E546E04E2875E59A007ABF34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E546E04C2875E59A007ABF34 /* Main.storyboard */; };
 		E546E0502875E59D007ABF34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E546E04F2875E59D007ABF34 /* Assets.xcassets */; };
 		E546E0532875E59D007ABF34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E546E0512875E59D007ABF34 /* LaunchScreen.storyboard */; };
+		E5D4A73928AE71A900014DFA /* DecathlonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4A73828AE71A900014DFA /* DecathlonViewController.swift */; };
+		E5D4A73B28AE71F200014DFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4A73A28AE71F200014DFA /* ViewController.swift */; };
+		E5D4A73D28AF908600014DFA /* HeptathlonMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4A73C28AF908600014DFA /* HeptathlonMViewController.swift */; };
+		E5D4A73F28AF90A400014DFA /* HeptathlonWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4A73E28AF90A400014DFA /* HeptathlonWViewController.swift */; };
+		E5D4A74128AF90BA00014DFA /* PentathlonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4A74028AF90BA00014DFA /* PentathlonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E546E0432875E59A007ABF34 /* DecathlonPointsCalcukator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DecathlonPointsCalcukator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E546E0462875E59A007ABF34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E546E0482875E59A007ABF34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E546E04A2875E59A007ABF34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E546E04D2875E59A007ABF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E546E04F2875E59D007ABF34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E546E0522875E59D007ABF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E546E0542875E59D007ABF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5D4A73828AE71A900014DFA /* DecathlonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecathlonViewController.swift; sourceTree = "<group>"; };
+		E5D4A73A28AE71F200014DFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E5D4A73C28AF908600014DFA /* HeptathlonMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeptathlonMViewController.swift; sourceTree = "<group>"; };
+		E5D4A73E28AF90A400014DFA /* HeptathlonWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeptathlonWViewController.swift; sourceTree = "<group>"; };
+		E5D4A74028AF90BA00014DFA /* PentathlonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PentathlonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		E546E0452875E59A007ABF34 /* DecathlonPointsCalcukator */ = {
 			isa = PBXGroup;
 			children = (
+				E5D4A73728AE716A00014DFA /* Controller */,
+				E5D4A73628AE715F00014DFA /* Model */,
+				E5D4A73528AE715200014DFA /* View */,
 				E546E0462875E59A007ABF34 /* AppDelegate.swift */,
 				E546E0482875E59A007ABF34 /* SceneDelegate.swift */,
-				E546E04A2875E59A007ABF34 /* ViewController.swift */,
-				E546E04C2875E59A007ABF34 /* Main.storyboard */,
 				E546E04F2875E59D007ABF34 /* Assets.xcassets */,
 				E546E0512875E59D007ABF34 /* LaunchScreen.storyboard */,
 				E546E0542875E59D007ABF34 /* Info.plist */,
 			);
 			path = DecathlonPointsCalcukator;
+			sourceTree = "<group>";
+		};
+		E5D4A73528AE715200014DFA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E546E04C2875E59A007ABF34 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E5D4A73628AE715F00014DFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E5D4A73728AE716A00014DFA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E5D4A73828AE71A900014DFA /* DecathlonViewController.swift */,
+				E5D4A73A28AE71F200014DFA /* ViewController.swift */,
+				E5D4A73C28AF908600014DFA /* HeptathlonMViewController.swift */,
+				E5D4A73E28AF90A400014DFA /* HeptathlonWViewController.swift */,
+				E5D4A74028AF90BA00014DFA /* PentathlonViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E546E04B2875E59A007ABF34 /* ViewController.swift in Sources */,
+				E5D4A73D28AF908600014DFA /* HeptathlonMViewController.swift in Sources */,
+				E5D4A73F28AF90A400014DFA /* HeptathlonWViewController.swift in Sources */,
+				E5D4A74128AF90BA00014DFA /* PentathlonViewController.swift in Sources */,
+				E5D4A73928AE71A900014DFA /* DecathlonViewController.swift in Sources */,
 				E546E0472875E59A007ABF34 /* AppDelegate.swift in Sources */,
+				E5D4A73B28AE71F200014DFA /* ViewController.swift in Sources */,
 				E546E0492875E59A007ABF34 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

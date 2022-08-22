@@ -17,6 +17,7 @@
 		E5D4A73D28AF908600014DFA /* HeptathlonMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4A73C28AF908600014DFA /* HeptathlonMViewController.swift */; };
 		E5D4A73F28AF90A400014DFA /* HeptathlonWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4A73E28AF90A400014DFA /* HeptathlonWViewController.swift */; };
 		E5D4A74128AF90BA00014DFA /* PentathlonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4A74028AF90BA00014DFA /* PentathlonViewController.swift */; };
+		E5D4A75E28B3A77F00014DFA /* Decathlon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4A75D28B3A77F00014DFA /* Decathlon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E5D4A73C28AF908600014DFA /* HeptathlonMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeptathlonMViewController.swift; sourceTree = "<group>"; };
 		E5D4A73E28AF90A400014DFA /* HeptathlonWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeptathlonWViewController.swift; sourceTree = "<group>"; };
 		E5D4A74028AF90BA00014DFA /* PentathlonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PentathlonViewController.swift; sourceTree = "<group>"; };
+		E5D4A75D28B3A77F00014DFA /* Decathlon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decathlon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		E5D4A73628AE715F00014DFA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E5D4A75D28B3A77F00014DFA /* Decathlon.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				E5D4A73F28AF90A400014DFA /* HeptathlonWViewController.swift in Sources */,
 				E5D4A74128AF90BA00014DFA /* PentathlonViewController.swift in Sources */,
 				E5D4A73928AE71A900014DFA /* DecathlonViewController.swift in Sources */,
+				E5D4A75E28B3A77F00014DFA /* Decathlon.swift in Sources */,
 				E546E0472875E59A007ABF34 /* AppDelegate.swift in Sources */,
 				E5D4A73B28AE71F200014DFA /* ViewController.swift in Sources */,
 				E546E0492875E59A007ABF34 /* SceneDelegate.swift in Sources */,

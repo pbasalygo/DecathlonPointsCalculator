@@ -6,61 +6,78 @@
 //
 
 import UIKit
-
-class DecathlonViewController: UIViewController {
+class DecathlonViewController: UIViewController,UITextFieldDelegate {
     var decathlon = Decathlon()
-    @IBOutlet weak var cenitmetersLJ: UITextField!
-    @IBOutlet weak var totalResult: UITextField!
-    @IBOutlet weak var day2Result: UITextField!
-    @IBOutlet weak var Result1500M: UITextField!
-    @IBOutlet weak var decimal1500M: UITextField!
-    @IBOutlet weak var seconds1500M: UITextField!
-    @IBOutlet weak var minutes1500M: UITextField!
-    @IBOutlet weak var ResultJT: UITextField!
-    @IBOutlet weak var centimetersJT: UITextField!
-    @IBOutlet weak var metersJT: UITextField!
-    @IBOutlet weak var ResultPV: UITextField!
-    @IBOutlet weak var centimetersPV: UITextField!
-    @IBOutlet weak var ResultDT: UITextField!
-    @IBOutlet weak var centimetersDT: UITextField!
-    @IBOutlet weak var metersDT: UITextField!
-    @IBOutlet weak var resultHurdles: UITextField!
-    @IBOutlet weak var decimalHurdles: UITextField!
-    @IBOutlet weak var secondsHurdles: UITextField!
-    @IBOutlet weak var day1Result: UITextField!
-    @IBOutlet weak var result400M: UITextField!
-    @IBOutlet weak var decimal400M: UITextField!
-    @IBOutlet weak var seconds400M: UITextField!
-    @IBOutlet weak var ResultsHJ: UITextField!
-    @IBOutlet weak var centimetersHJ: UITextField!
-    @IBOutlet weak var metersHJ: UITextField!
-    @IBOutlet weak var ResultSP: UITextField!
-    @IBOutlet weak var centimetersSP: UITextField!
-    @IBOutlet weak var metersSP: UITextField!
-    @IBOutlet weak var ResultLJ: UITextField!
-    @IBOutlet weak var decimal100M: UITextField!
-    @IBOutlet weak var Seconds100M: UITextField!
-    @IBOutlet weak var Result100MTF: UITextField!
-    @IBOutlet weak var testButton: UIButton!
+    
+    @IBOutlet weak var TotalScore: UITextField!
+    @IBOutlet weak var day2Score: UITextField!
+    @IBOutlet weak var Points1500M: UITextField!
+    @IBOutlet weak var PointsJV: UITextField!
+    @IBOutlet weak var markJV: UITextField!
+    @IBOutlet weak var PointsPV: UITextField!
+    @IBOutlet weak var markPV: UITextField!
+    @IBOutlet weak var PointDT: UITextField!
+    @IBOutlet weak var markDT: UITextField!
+    @IBOutlet weak var PointsHurdles: UITextField!
+    @IBOutlet weak var markHurdles: UITextField!
+    @IBOutlet weak var day1Score: UITextField!
+    @IBOutlet weak var Points400M: UITextField!
+    @IBOutlet weak var mark400M: UITextField!
+    @IBOutlet weak var PointsHJ: UITextField!
+    @IBOutlet weak var markHJ: UITextField!
+    @IBOutlet weak var PointsSP: UITextField!
+    @IBOutlet weak var markSP: UITextField!
+    @IBOutlet weak var PointsLJ: UITextField!
+    @IBOutlet weak var markLJ: UITextField!
+    @IBOutlet weak var Points100M: UITextField!
+    @IBOutlet weak var mark100M: UITextField!
+    @IBOutlet weak var Mark1500: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        Mark1500.delegate = self
+        mark100M.delegate = self
+        markLJ.delegate = self
+        markSP.delegate = self
+        markHJ.delegate = self
+        mark400M.delegate = self
+        markHurdles.delegate = self
+        markDT.delegate = self
+        markPV.delegate = self
+        markJV.delegate = self
+        
         // Do any additional setup after loading the view.
     }
     
     
     
+    @IBAction func EditingEnded(_ sender: UITextField) {
+        switch sender{
+        case mark100M:
+            let score100 = decathlon.Calculate100M(mark100M.text!)
+            Points100M.text = String(score100)
+        case markLJ:
+            let scoreLJ = decathlon.calculateLJ(markLJ.text!)
+            PointsLJ.text = String(scoreLJ)
+        default:
+            break
+        }
+    }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let isNumber = CharacterSet.decimalDigits.isSuperset(of: CharacterSet(charactersIn: string))
+        let withDecimal = (
+            string == NumberFormatter().decimalSeparator &&
+            textField.text?.contains(string) == false
+        )
+        return isNumber || withDecimal
+    }
     
     @IBAction func testButtonPressed(_ sender: Any) {
-        if(Seconds100M.text != nil && decimal100M.text != nil){
+        
+        
+//        let points100M = decathlon.Calculate100M(Int(Seconds100M.text),Int(decimal100M.text))
+           
             
-            let performance = "\(Seconds100M.text!).\(decimal100M.text!)"
-            let forPoints = Double(performance)
-            
-            let points100M = decathlon.Calculate100M(forPoints!)
-            Result100MTF.text = String(points100M)
-            
-        }
+        
     }
     /*
     // MARK: - Navigation

@@ -135,7 +135,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="1250"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="la7-rI-w1J" userLabel="DecathlonStackView">
-                                                <rect key="frame" x="8" y="144.00000000000011" width="313.66666666666669" height="1062.3333333333333"/>
+                                                <rect key="frame" x="8" y="144.00000000000006" width="313.66666666666669" height="984.33333333333337"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1FS-Cz-AOC" userLabel="Day1StackView">
                                                         <rect key="frame" x="0.0" y="0.0" width="313.66666666666669" height="442.33333333333331"/>
@@ -168,7 +168,7 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="60.333333333333336" height="34"/>
                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                                                 <connections>
                                                                                     <action selector="EditingEnded:" destination="LUh-1o-zpO" eventType="editingDidEnd" id="V25-UM-b2R"/>
                                                                                 </connections>
@@ -204,7 +204,7 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="60.333333333333336" height="34"/>
                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                                                 <connections>
                                                                                     <action selector="EditingEnded:" destination="LUh-1o-zpO" eventType="editingDidEnd" id="YDN-0U-Wgz"/>
                                                                                 </connections>
@@ -240,7 +240,10 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="60.333333333333336" height="34"/>
                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                                                                <connections>
+                                                                                    <action selector="EditingEnded:" destination="LUh-1o-zpO" eventType="editingDidEnd" id="jBq-ZU-A51"/>
+                                                                                </connections>
                                                                             </textField>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGa-mE-dEK">
                                                                                 <rect key="frame" x="70.333333333333329" y="0.0" width="44" height="34"/>
@@ -273,7 +276,10 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="60.333333333333336" height="34"/>
                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                                                                <connections>
+                                                                                    <action selector="EditingEnded:" destination="LUh-1o-zpO" eventType="editingDidEnd" id="XCK-Io-GBo"/>
+                                                                                </connections>
                                                                             </textField>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7q-v7-xGU">
                                                                                 <rect key="frame" x="70.333333333333329" y="0.0" width="44" height="34"/>
@@ -306,7 +312,10 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="60.333333333333336" height="34"/>
                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                                                                <connections>
+                                                                                    <action selector="EditingEnded:" destination="LUh-1o-zpO" eventType="editingDidEnd" id="de6-z3-p3u"/>
+                                                                                </connections>
                                                                             </textField>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRb-Xh-fgJ">
                                                                                 <rect key="frame" x="70.333333333333329" y="0.0" width="44" height="34"/>
@@ -372,7 +381,10 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="60.333333333333336" height="34"/>
                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                                                                <connections>
+                                                                                    <action selector="EditingEnded:" destination="LUh-1o-zpO" eventType="editingDidEnd" id="mCt-9V-oZA"/>
+                                                                                </connections>
                                                                             </textField>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ov-1S-6Xf">
                                                                                 <rect key="frame" x="70.333333333333329" y="0.0" width="44" height="34"/>
@@ -405,7 +417,10 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="60.333333333333336" height="34"/>
                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                                                                <connections>
+                                                                                    <action selector="EditingEnded:" destination="LUh-1o-zpO" eventType="editingDidEnd" id="klO-lD-YaT"/>
+                                                                                </connections>
                                                                             </textField>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9F-BL-Wfh">
                                                                                 <rect key="frame" x="70.333333333333329" y="0.0" width="44" height="34"/>
@@ -438,7 +453,10 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="60.333333333333336" height="34"/>
                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                                                                <connections>
+                                                                                    <action selector="EditingEnded:" destination="LUh-1o-zpO" eventType="editingDidEnd" id="TyG-uA-agb"/>
+                                                                                </connections>
                                                                             </textField>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7c-no-BFy">
                                                                                 <rect key="frame" x="70.333333333333329" y="0.0" width="44" height="34"/>
@@ -471,7 +489,10 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="60.333333333333336" height="34"/>
                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                                                                <connections>
+                                                                                    <action selector="EditingEnded:" destination="LUh-1o-zpO" eventType="editingDidEnd" id="YTO-c4-2S7"/>
+                                                                                </connections>
                                                                             </textField>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUz-7c-c84">
                                                                                 <rect key="frame" x="70.333333333333329" y="0.0" width="44" height="34"/>
@@ -505,6 +526,9 @@
                                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                                                                <connections>
+                                                                                    <action selector="EditingEnded:" destination="LUh-1o-zpO" eventType="editingDidEnd" id="9Lt-Ij-mi3"/>
+                                                                                </connections>
                                                                             </textField>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9G-cO-Ag2">
                                                                                 <rect key="frame" x="65.333333333333329" y="0.0" width="44" height="34"/>
@@ -561,14 +585,6 @@
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4M-kc-FfE">
-                                                        <rect key="frame" x="0.0" y="1031.3333333333333" width="67" height="31"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                                        <connections>
-                                                            <action selector="testButtonPressed:" destination="LUh-1o-zpO" eventType="touchUpInside" id="ngg-lf-Itr"/>
-                                                        </connections>
-                                                    </button>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
@@ -602,13 +618,13 @@
                     <size key="freeformSize" width="390" height="1200"/>
                     <connections>
                         <outlet property="Mark1500" destination="faM-ZP-tqw" id="rFe-9l-CD7"/>
-                        <outlet property="PointDT" destination="H3d-5O-H3Y" id="JHw-JP-rQd"/>
                         <outlet property="Points100M" destination="amd-f2-4fm" id="dXp-xH-sWc"/>
                         <outlet property="Points1500M" destination="Jso-4K-FjT" id="kIa-Xc-PFm"/>
                         <outlet property="Points400M" destination="B9S-FV-LFG" id="LW3-wb-Pi3"/>
+                        <outlet property="PointsDT" destination="H3d-5O-H3Y" id="JHw-JP-rQd"/>
                         <outlet property="PointsHJ" destination="94G-ze-HyP" id="nSD-e4-1s3"/>
                         <outlet property="PointsHurdles" destination="wHN-xw-b71" id="d07-wo-JW5"/>
-                        <outlet property="PointsJV" destination="Bhh-S5-rnI" id="bBO-EV-wCa"/>
+                        <outlet property="PointsJT" destination="Bhh-S5-rnI" id="bBO-EV-wCa"/>
                         <outlet property="PointsLJ" destination="mBh-Nf-HuW" id="XFa-pu-MHk"/>
                         <outlet property="PointsPV" destination="AX9-iu-cWb" id="Hkt-HE-wog"/>
                         <outlet property="PointsSP" destination="asF-e1-HOW" id="wAJ-fj-PPG"/>
@@ -620,7 +636,7 @@
                         <outlet property="markDT" destination="ClC-BX-T3Q" id="St6-E1-c88"/>
                         <outlet property="markHJ" destination="ozd-mx-irs" id="YgG-le-nb7"/>
                         <outlet property="markHurdles" destination="7Op-a1-JfJ" id="6Fc-UB-jOc"/>
-                        <outlet property="markJV" destination="zyD-qZ-Qlh" id="5Jb-2L-2ee"/>
+                        <outlet property="markJT" destination="zyD-qZ-Qlh" id="5Jb-2L-2ee"/>
                         <outlet property="markLJ" destination="cYF-de-bCC" id="4y6-2R-SHq"/>
                         <outlet property="markPV" destination="TDE-43-NgL" id="QCq-qJ-5fa"/>
                         <outlet property="markSP" destination="UAe-a9-d6b" id="sgP-ip-ck7"/>

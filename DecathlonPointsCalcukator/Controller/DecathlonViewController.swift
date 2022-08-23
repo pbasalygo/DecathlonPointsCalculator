@@ -12,11 +12,11 @@ class DecathlonViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var TotalScore: UITextField!
     @IBOutlet weak var day2Score: UITextField!
     @IBOutlet weak var Points1500M: UITextField!
-    @IBOutlet weak var PointsJV: UITextField!
-    @IBOutlet weak var markJV: UITextField!
+    @IBOutlet weak var PointsJT: UITextField!
+    @IBOutlet weak var markJT: UITextField!
     @IBOutlet weak var PointsPV: UITextField!
     @IBOutlet weak var markPV: UITextField!
-    @IBOutlet weak var PointDT: UITextField!
+    @IBOutlet weak var PointsDT: UITextField!
     @IBOutlet weak var markDT: UITextField!
     @IBOutlet weak var PointsHurdles: UITextField!
     @IBOutlet weak var markHurdles: UITextField!
@@ -43,7 +43,7 @@ class DecathlonViewController: UIViewController,UITextFieldDelegate {
         markHurdles.delegate = self
         markDT.delegate = self
         markPV.delegate = self
-        markJV.delegate = self
+        markJT.delegate = self
         
         // Do any additional setup after loading the view.
     }
@@ -51,16 +51,37 @@ class DecathlonViewController: UIViewController,UITextFieldDelegate {
     
     
     @IBAction func EditingEnded(_ sender: UITextField) {
+        if sender.hasText{
         switch sender{
         case mark100M:
-            let score100 = decathlon.Calculate100M(mark100M.text!)
-            Points100M.text = String(score100)
+            Points100M.text = decathlon.calculate100M(mark100M.text!)
         case markLJ:
-            let scoreLJ = decathlon.calculateLJ(markLJ.text!)
-            PointsLJ.text = String(scoreLJ)
+            PointsLJ.text = decathlon.calculateLJ(markLJ.text!)
+        case markSP:
+            PointsSP.text = decathlon.calculateSP(markSP.text!)
+        case markHJ:
+            PointsHJ.text = decathlon.calculateHJ(markHJ.text!)
+        case mark400M:
+            Points400M.text = decathlon.calculate400M(mark400M.text!)
+        case markHurdles:
+            PointsHurdles.text = decathlon.calculateHurdles(markHurdles.text!)
+        case markDT:
+            PointsDT.text = decathlon.calculateDT(markDT.text!)
+        case markPV:
+            PointsPV.text = decathlon.calculatePV(markPV.text!)
+        case markJT:
+            PointsJT.text = decathlon.calculateJT(markJT.text!)
+        case Mark1500:
+            Points1500M.text = decathlon.calculate1500M(Mark1500.text!)
+            
         default:
             break
         }
+            day1Score.text = String(decathlon.pointsDay1)
+            day2Score.text = String(decathlon.pointsDay2)
+            TotalScore.text = String(decathlon.pointsTotal)
+        }
+        
     }
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let isNumber = CharacterSet.decimalDigits.isSuperset(of: CharacterSet(charactersIn: string))
@@ -71,14 +92,6 @@ class DecathlonViewController: UIViewController,UITextFieldDelegate {
         return isNumber || withDecimal
     }
     
-    @IBAction func testButtonPressed(_ sender: Any) {
-        
-        
-//        let points100M = decathlon.Calculate100M(Int(Seconds100M.text),Int(decimal100M.text))
-           
-            
-        
-    }
     /*
     // MARK: - Navigation
 

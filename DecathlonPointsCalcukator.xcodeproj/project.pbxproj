@@ -19,6 +19,7 @@
 		E5D4A74128AF90BA00014DFA /* PentathlonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4A74028AF90BA00014DFA /* PentathlonViewController.swift */; };
 		E5D4A75E28B3A77F00014DFA /* Decathlon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4A75D28B3A77F00014DFA /* Decathlon.swift */; };
 		E5D4A76028B63F5D00014DFA /* MensHeptathlon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4A75F28B63F5D00014DFA /* MensHeptathlon.swift */; };
+		E5D4A76228B917E300014DFA /* WomanHeptathlon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4A76128B917E200014DFA /* WomanHeptathlon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		E5D4A74028AF90BA00014DFA /* PentathlonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PentathlonViewController.swift; sourceTree = "<group>"; };
 		E5D4A75D28B3A77F00014DFA /* Decathlon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decathlon.swift; sourceTree = "<group>"; };
 		E5D4A75F28B63F5D00014DFA /* MensHeptathlon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensHeptathlon.swift; sourceTree = "<group>"; };
+		E5D4A76128B917E200014DFA /* WomanHeptathlon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomanHeptathlon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			children = (
 				E5D4A75D28B3A77F00014DFA /* Decathlon.swift */,
 				E5D4A75F28B63F5D00014DFA /* MensHeptathlon.swift */,
+				E5D4A76128B917E200014DFA /* WomanHeptathlon.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				E546E0472875E59A007ABF34 /* AppDelegate.swift in Sources */,
 				E5D4A73B28AE71F200014DFA /* ViewController.swift in Sources */,
 				E546E0492875E59A007ABF34 /* SceneDelegate.swift in Sources */,
+				E5D4A76228B917E300014DFA /* WomanHeptathlon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

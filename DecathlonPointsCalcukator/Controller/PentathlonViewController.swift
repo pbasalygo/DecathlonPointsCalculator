@@ -7,14 +7,50 @@
 
 import UIKit
 
-class PentathlonViewController: UIViewController {
-
+class PentathlonViewController: UIViewController,UITextFieldDelegate {
+var pentathlon = Pentathlon()
+    @IBOutlet weak var pointsTotal: UITextField!
+    @IBOutlet weak var points800M: UITextField!
+    @IBOutlet weak var pointsLJ: UITextField!
+    @IBOutlet weak var pointsSP: UITextField!
+    @IBOutlet weak var pointsHJ: UITextField!
+    @IBOutlet weak var pointsHurdles: UITextField!
+    @IBOutlet weak var mark800M: UITextField!
+    @IBOutlet weak var markLJ: UITextField!
+    @IBOutlet weak var markSP: UITextField!
+    @IBOutlet weak var markHJ: UITextField!
+    @IBOutlet weak var markHurdles: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        markHurdles.delegate = self
+        markHJ.delegate = self
+        markSP.delegate = self
+        markLJ.delegate = self
+        mark800M.delegate = self
+        
 
         // Do any additional setup after loading the view.
     }
-    
+    @IBAction func EditingEnded(_ sender: UITextField) {
+        if sender.hasText{
+            switch sender{
+            case markHurdles:
+                pointsHurdles.text = pentathlon.calculateHurdles(markHurdles.text!)
+            case markHJ:
+                pointsHJ.text = pentathlon.calculateHJ(markHJ.text!)
+            case markSP:
+                pointsSP.text = pentathlon.calculateSP(markSP.text!)
+            case markLJ:
+                pointsLJ.text = pentathlon.calculateLJ(markLJ.text!)
+            case mark800M:
+                points800M.text = pentathlon.calculate800M(mark800M.text!)
+            default:
+                break
+                
+            }
+            pointsTotal.text = String(pentathlon.pointsTotal)
+        }
+    }
 
     /*
     // MARK: - Navigation
@@ -25,5 +61,12 @@ class PentathlonViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let isNumber = CharacterSet.decimalDigits.isSuperset(of: CharacterSet(charactersIn: string))
+        let withDecimal = (
+            string == NumberFormatter().decimalSeparator &&
+            textField.text?.contains(string) == false
+        )
+        return isNumber || withDecimal
+    }
 }

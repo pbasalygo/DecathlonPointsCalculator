@@ -20,6 +20,7 @@
 		E5D4A75E28B3A77F00014DFA /* Decathlon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4A75D28B3A77F00014DFA /* Decathlon.swift */; };
 		E5D4A76028B63F5D00014DFA /* MensHeptathlon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4A75F28B63F5D00014DFA /* MensHeptathlon.swift */; };
 		E5D4A76228B917E300014DFA /* WomanHeptathlon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4A76128B917E200014DFA /* WomanHeptathlon.swift */; };
+		E5D4A76428BB5AB400014DFA /* Pentathlon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4A76328BB5AB400014DFA /* Pentathlon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		E5D4A75D28B3A77F00014DFA /* Decathlon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decathlon.swift; sourceTree = "<group>"; };
 		E5D4A75F28B63F5D00014DFA /* MensHeptathlon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensHeptathlon.swift; sourceTree = "<group>"; };
 		E5D4A76128B917E200014DFA /* WomanHeptathlon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomanHeptathlon.swift; sourceTree = "<group>"; };
+		E5D4A76328BB5AB400014DFA /* Pentathlon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pentathlon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				E5D4A75D28B3A77F00014DFA /* Decathlon.swift */,
 				E5D4A75F28B63F5D00014DFA /* MensHeptathlon.swift */,
 				E5D4A76128B917E200014DFA /* WomanHeptathlon.swift */,
+				E5D4A76328BB5AB400014DFA /* Pentathlon.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				E5D4A73F28AF90A400014DFA /* HeptathlonWViewController.swift in Sources */,
 				E5D4A74128AF90BA00014DFA /* PentathlonViewController.swift in Sources */,
 				E5D4A73928AE71A900014DFA /* DecathlonViewController.swift in Sources */,
+				E5D4A76428BB5AB400014DFA /* Pentathlon.swift in Sources */,
 				E5D4A76028B63F5D00014DFA /* MensHeptathlon.swift in Sources */,
 				E5D4A75E28B3A77F00014DFA /* Decathlon.swift in Sources */,
 				E546E0472875E59A007ABF34 /* AppDelegate.swift in Sources */,

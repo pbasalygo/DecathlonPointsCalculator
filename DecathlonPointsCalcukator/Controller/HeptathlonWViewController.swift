@@ -11,6 +11,7 @@ class HeptathlonWViewController: UIViewController,UITextFieldDelegate {
     var heptathlonW = WomanHeptathlon()
     @IBOutlet weak var markHurdles: UITextField!
     
+    @IBOutlet weak var mark800Hundreds: UITextField!
     @IBOutlet weak var pointsTotal: UITextField!
     @IBOutlet weak var pointsDay2: UITextField!
     @IBOutlet weak var points800M: UITextField!
@@ -36,6 +37,7 @@ class HeptathlonWViewController: UIViewController,UITextFieldDelegate {
         markLJ.delegate = self
         markJT.delegate = self
         mark800M.delegate = self
+        mark800Hundreds.delegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -54,8 +56,8 @@ class HeptathlonWViewController: UIViewController,UITextFieldDelegate {
                 pointsLJ.text = heptathlonW.calculateLJ(markLJ.text!)
             case markJT:
                 pointsJT.text = heptathlonW.calculateJT(markJT.text!)
-            case mark800M:
-                points800M.text = heptathlonW.calculate800M(mark800M.text!)
+            case mark800M,mark800Hundreds:
+                points800M.text = heptathlonW.calculate800M(mark800M.text!,mark800Hundreds.text!)
             default:
                 break
                 

@@ -87,7 +87,7 @@ struct Decathlon{
         calculateTotals()
         return String(pointsJT)
     }
-    mutating func calculate1500M(_ performance:String)->String{
+    mutating func calculate1500M(_ performance:String,_ hundreds:String)->String{
         let aCoeff1500M = 0.03768
         let bCoeff1500M  = 480.0
         let cCoeff1500M = 1.85
@@ -95,8 +95,9 @@ struct Decathlon{
         var remainder = Performance?.truncatingRemainder(dividingBy: 1)
         remainder = remainder!*100
         let minutes = Int(Performance!)
-        let performanceInSeconds = (minutes*60)+Int(remainder!)
-        points1500m = Int(aCoeff1500M * (pow(bCoeff1500M - Double(performanceInSeconds), cCoeff1500M)))
+        let Hundreds = Double(hundreds)!/100
+        let performanceInSeconds = (Double(minutes)*60)+remainder!+Hundreds
+        points1500m = Int(aCoeff1500M * (pow(bCoeff1500M - performanceInSeconds, cCoeff1500M)))
         calculateTotals()
         return String(points1500m)
     }

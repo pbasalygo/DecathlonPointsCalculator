@@ -9,6 +9,7 @@ import UIKit
 
 class HeptathlonMViewController: UIViewController,UITextFieldDelegate{
     var heptathlonM = MensHeptathlon()
+    @IBOutlet weak var mark1000Hundreds: UITextField!
     @IBOutlet weak var pointsTotal: UITextField!
     @IBOutlet weak var pointsDay2: UITextField!
     @IBOutlet weak var points1000M: UITextField!
@@ -36,6 +37,7 @@ class HeptathlonMViewController: UIViewController,UITextFieldDelegate{
         markHurdles.delegate = self
         markPV.delegate = self
         mark1000M.delegate = self
+        mark1000Hundreds.delegate = self
         
 
         // Do any additional setup after loading the view.
@@ -56,8 +58,9 @@ class HeptathlonMViewController: UIViewController,UITextFieldDelegate{
                 pointsHurdles.text = heptathlonM.calculateHurdles(markHurdles.text!)
             case markPV:
                 pointsPV.text = heptathlonM.calculatePV(markPV.text!)
-            case mark1000M:
-                points1000M.text = heptathlonM.calculate1000M(mark1000M.text!)
+            case mark1000M,mark1000Hundreds:
+                points1000M.text = heptathlonM.calculate1000M(mark1000M.text!,mark1000Hundreds.text!)
+            
             default:
                 break
                 

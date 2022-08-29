@@ -9,6 +9,7 @@ import UIKit
 
 class PentathlonViewController: UIViewController,UITextFieldDelegate {
 var pentathlon = Pentathlon()
+    @IBOutlet weak var mark800Hundreds: UITextField!
     @IBOutlet weak var pointsTotal: UITextField!
     @IBOutlet weak var points800M: UITextField!
     @IBOutlet weak var pointsLJ: UITextField!
@@ -27,6 +28,7 @@ var pentathlon = Pentathlon()
         markSP.delegate = self
         markLJ.delegate = self
         mark800M.delegate = self
+        mark800Hundreds.delegate = self
         
 
         // Do any additional setup after loading the view.
@@ -42,8 +44,8 @@ var pentathlon = Pentathlon()
                 pointsSP.text = pentathlon.calculateSP(markSP.text!)
             case markLJ:
                 pointsLJ.text = pentathlon.calculateLJ(markLJ.text!)
-            case mark800M:
-                points800M.text = pentathlon.calculate800M(mark800M.text!)
+            case mark800M,mark800Hundreds:
+                points800M.text = pentathlon.calculate800M(mark800M.text!,mark800Hundreds.text!)
             default:
                 break
                 

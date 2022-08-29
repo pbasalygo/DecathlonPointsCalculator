@@ -9,6 +9,7 @@ import UIKit
 class DecathlonViewController: UIViewController,UITextFieldDelegate {
     var decathlon = Decathlon()
     
+    @IBOutlet weak var mark1500Hundreds: UITextField!
     @IBOutlet weak var TotalScore: UITextField!
     @IBOutlet weak var day2Score: UITextField!
     @IBOutlet weak var Points1500M: UITextField!
@@ -44,6 +45,7 @@ class DecathlonViewController: UIViewController,UITextFieldDelegate {
         markDT.delegate = self
         markPV.delegate = self
         markJT.delegate = self
+        mark1500Hundreds.delegate = self
         
         // Do any additional setup after loading the view.
     }
@@ -71,9 +73,8 @@ class DecathlonViewController: UIViewController,UITextFieldDelegate {
             PointsPV.text = decathlon.calculatePV(markPV.text!)
         case markJT:
             PointsJT.text = decathlon.calculateJT(markJT.text!)
-        case Mark1500:
-            Points1500M.text = decathlon.calculate1500M(Mark1500.text!)
-            
+        case Mark1500,mark1500Hundreds:
+            Points1500M.text = decathlon.calculate1500M(Mark1500.text!,mark1500Hundreds.text!)
         default:
             break
         }

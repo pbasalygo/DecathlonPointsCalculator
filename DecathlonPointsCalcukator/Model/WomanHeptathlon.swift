@@ -61,7 +61,7 @@ struct WomanHeptathlon{
         calculateTotals()
         return String(pointsJT)
     }
-    mutating func calculate800M(_ performance:String)->String{
+    mutating func calculate800M(_ performance:String, _ hundreds:String)->String{
         let aCoeff = 0.11193
         let bCoeff  = 254.0
         let cCoeff = 1.88
@@ -69,8 +69,9 @@ struct WomanHeptathlon{
         var remainder = Performance?.truncatingRemainder(dividingBy: 1)
         remainder = remainder!*100
         let minutes = Int(Performance!)
-        let performanceInSeconds = (minutes*60)+Int(remainder!)
-        points800M = Int(aCoeff * (pow(bCoeff - Double(performanceInSeconds), cCoeff)))
+        let Hundreds = Double(hundreds)!/100
+        let performanceInSeconds = (Double(minutes)*60)+remainder!+Hundreds
+        points800M = Int(aCoeff * (pow(bCoeff - performanceInSeconds, cCoeff)))
         calculateTotals()
         return String(points800M)
     }
